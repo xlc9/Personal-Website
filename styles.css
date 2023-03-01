@@ -1,0 +1,93 @@
+body{ /* Requirement-2.A*/
+    margin:0; /* Requirement-2.6*/
+    background-color:black; /*Requirement-2.4*/
+    display:flex; /* Requirement-2.12 */
+    flex-flow: column;
+    color:white;/* Requirement-2.3*/
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*Requirement-2.1*/
+}
+
+div img{ /* Requirement-2.F*/
+    width:33%; /* Requirement-2.10*/
+    height: 25%;
+    margin:7.5px;/* Requirement-2.9*/
+    filter:blur(5px);
+}
+
+div img:hover{
+    filter:none;
+}
+
+h1,h2{/* Requirement-2.B*/
+    text-align:center;/*Requirement-2.2*/
+}
+
+nav ul{ 
+  list-style-type:none; /* Requirement-2.8*/
+  float:right;/* Requirement-2.11*/
+}
+nav ul li{
+  display:inline;
+  margin-right:10px;
+}
+
+a{
+    color:white;
+}
+
+a:visited{/* Requirement-2.E*/
+  color:red;
+}
+
+a:hover{
+  color:black;
+  background-color:white;
+  border-radius: 2px;  /*Requirement-2.5*/
+}
+
+#spacer{ /* Requirement-2.D*/
+    background:red;
+    content:none;
+    width:100%;
+    height:5px;
+    margin:0;
+}
+
+.container{/* Requirement-2.C*/
+  display:flex;
+}
+
+.special{
+    height:581px; /*Requirement-2.7*/
+}
+
+.behind{
+    position:absolute; /* Requirement-2.15*/
+    z-index:-1; /* Requirement-2.17*/
+    width:120px;
+    height:50px;
+}
+
+.box{
+    float:right;
+    width:33%;
+    height:25%;
+    padding-left:7.5px;
+}
+.artist{
+    text-shadow: 4px -2px 3px red; 
+}
+
+.limit{
+    width:500px;
+    height:200px;
+    overflow:auto;/* Requirement-2.14*/
+}
+
+.useless{
+    visibility: hidden; /* Requirement-2.16*/
+}
+
+div .useless{
+    clear:both; /* Requirement-2.13*/
+}
